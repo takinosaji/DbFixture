@@ -1,0 +1,22 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>netstandard2.1</TargetFramework>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <Compile Include="DbFixture.fs" />
+        <Compile Include="DataSeed.fs" />
+        <Compile Include="DbFixtureBuilder.fs" />
+        <Compile Include="MsSql\MsSqlDbFixture.fs" />
+        <Compile Include="MsSql\MsSqlDbFixtureBuilder.fs" />
+        <Compile Include="MsSql\EfDataSeed.fs" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <PackageReference Include="Dapper" Version="2.0.35" />
+      <PackageReference Include="EntityFramework" Version="6.4.4" />
+      <PackageReference Include="System.Data.SqlClient" Version="4.8.1" />
+    </ItemGroup>
+
+</Project>
